@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HotelEercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="pfo-F6-irN">
+                                <rect key="frame" x="16" y="135" width="414" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leF-a1-zCW">
+                                <rect key="frame" x="16" y="94" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dug-1D-EPR">
+                                <rect key="frame" x="16" y="371" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-7M-fD7">
+                                <rect key="frame" x="16" y="412" width="382" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward client?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7a-T2-0ox">
+                                <rect key="frame" x="16" y="648" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGB-wG-M77">
+                                <rect key="frame" x="182.5" y="679" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAy-g9-aby">
+                                <rect key="frame" x="16" y="730" width="382" height="30"/>
+                                <state key="normal" title="Best hotel"/>
+                                <connections>
+                                    <action selector="bestHotelButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyf-ps-D0r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7U-QS-RM6">
+                                <rect key="frame" x="16" y="852" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d7a-T2-0ox" firstAttribute="top" secondItem="SWY-7M-fD7" secondAttribute="bottom" constant="20" id="0N0-gA-iMZ"/>
+                            <constraint firstItem="wAy-g9-aby" firstAttribute="top" secondItem="KGB-wG-M77" secondAttribute="bottom" constant="20" id="1iX-eW-beD"/>
+                            <constraint firstItem="pfo-F6-irN" firstAttribute="top" secondItem="leF-a1-zCW" secondAttribute="bottom" constant="20" id="EMZ-dO-TMi"/>
+                            <constraint firstItem="SWY-7M-fD7" firstAttribute="top" secondItem="dug-1D-EPR" secondAttribute="bottom" constant="20" id="GD2-Mh-Hqs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e7U-QS-RM6" secondAttribute="bottom" constant="10" id="Ihg-ps-gfA"/>
+                            <constraint firstItem="leF-a1-zCW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Nfz-do-aWA"/>
+                            <constraint firstAttribute="trailing" secondItem="SWY-7M-fD7" secondAttribute="trailing" constant="16" id="UpM-Za-5CS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAy-g9-aby" secondAttribute="trailing" constant="16" id="VF5-LN-oLd"/>
+                            <constraint firstItem="pfo-F6-irN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XHz-Ql-GMU"/>
+                            <constraint firstItem="pfo-F6-irN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="Y8J-ac-7kl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e7U-QS-RM6" secondAttribute="trailing" constant="16" id="YER-fH-X34"/>
+                            <constraint firstItem="e7U-QS-RM6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wAy-g9-aby" secondAttribute="bottom" constant="10" id="dZJ-9l-2Eb"/>
+                            <constraint firstItem="d7a-T2-0ox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gvP-wt-b7o"/>
+                            <constraint firstItem="KGB-wG-M77" firstAttribute="top" secondItem="d7a-T2-0ox" secondAttribute="bottom" constant="10" id="hQ7-QU-78N"/>
+                            <constraint firstItem="leF-a1-zCW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="j6h-bX-aup"/>
+                            <constraint firstItem="e7U-QS-RM6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jfg-wy-chj"/>
+                            <constraint firstItem="SWY-7M-fD7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oSF-Q7-H9J"/>
+                            <constraint firstItem="wAy-g9-aby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ohp-iP-ODE"/>
+                            <constraint firstItem="dug-1D-EPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pL8-cj-BED"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7a-T2-0ox" secondAttribute="trailing" constant="16" id="wuI-6W-UTh"/>
+                            <constraint firstItem="KGB-wG-M77" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNd-Di-AYg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="leF-a1-zCW" secondAttribute="trailing" constant="16" id="zQf-a6-Mc1"/>
+                            <constraint firstItem="dug-1D-EPR" firstAttribute="top" secondItem="pfo-F6-irN" secondAttribute="bottom" constant="20" id="zmb-q8-eCD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dug-1D-EPR" secondAttribute="trailing" constant="16" id="znn-Vp-hvz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bestHotelNameLabel" destination="e7U-QS-RM6" id="4Ku-5W-ttC"/>
+                        <outlet property="checkInDatePicker" destination="pfo-F6-irN" id="QUU-qT-t2J"/>
+                        <outlet property="checkoutDatePicker" destination="SWY-7M-fD7" id="mhC-cG-h7W"/>
+                        <outlet property="isVipSwitch" destination="KGB-wG-M77" id="iBS-mg-NSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
